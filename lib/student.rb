@@ -1,13 +1,11 @@
 class Student
   def hello  
-    it "returns a greeting phrase" do 
-    expect{student.hello}.to output("Hey there! I'm so excited to learn stuff.\n").to_stdout
+    puts "Hey there! I'm so excited to learn stuff."
     end
   end
 
-  describe "#raise_hand" do 
-    it "returns the phrase 'Pick me!'" do 
-    expect{student.raise_hand}.to output("Pick me!\n").to_stdout
+  def raise_hand 
+    puts "Pick me!"
     end
   end
 end
